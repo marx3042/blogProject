@@ -1,0 +1,434 @@
+body {
+	background-color: #f8f8f8;
+	font-family: "Bree Serif", serif;
+}
+
+header {
+	height: 100px;
+	display: flex;
+	align-items: center; /* 수직 가운데 정렬 */
+	color: #51e3d4;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* 그림자 추가 */
+	z-index: 10;
+}
+
+header a {
+	font-size: 50px;
+	font-family: "Alfa Slab One", serif;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+main {
+	justify-content: center; /* 가로 중앙 정렬 */
+	align-items: center; /* 세로 중앙 정렬 */
+	height: auto; /* 전체 화면 높이에 맞춰 정렬 */
+	background-color: #f0f0f0; /* 배경색 */
+	padding: 20px;
+}
+
+.blog-post {
+	width: 90%; /* 전체 너비를 사용 */
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	flex-direction: column; /* 세로 정렬 */
+	height: auto;
+	margin: 30px auto;
+
+}
+
+.post-image {
+	width: 100%; /* 이미지 너비를 100%로 설정 */
+	height: 350px; /* 이미지 높이 설정 */
+	overflow: hidden; /* 넘치는 이미지 숨김 */
+
+}
+
+.post-image img {
+	width: 100%;
+	height: 100%;
+	 /* 이미지 비율 유지하며 채우기 */
+	border-radius: 8px;
+	object-fit: cover;
+
+}
+
+.post-title {
+	margin: 30px auto;
+	width: 80%;
+	border-left: 6px solid #51e3d4;
+	padding: 10px;
+
+}
+
+.post-title h2 {
+	margin: 1px 0; /* 제목 위아래 여백 설정 */
+	font-size: 50px;
+}
+
+.post-info {
+	width: 80%;
+	margin: -10px auto; /* 제목 위아래 여백 설정 */
+	height: 30px;
+	display: flex;
+	gap: 10px; /* 요소들 사이의 간격 설정 */
+	justify-content: space-between;
+
+}
+
+.post-info img {
+	object-fit: cover;
+}
+
+.post-info-btn {
+	margin-left: auto;
+}
+
+
+.post-info-btn button {
+	margin-left: 10px; /* Adds some spacing between the buttons */
+	border: none;
+	border-radius: 4px;
+	background-color: #51e3d4;
+	color: white;
+	padding: 5px;
+
+}
+
+.post-info  p {
+	font-size: 20px;
+}
+
+.post-info  i {
+	font-size: 20px;
+}
+
+.post-content {
+	padding: 20px;
+	border: 1px solid #eeeeee;
+	border-bottom: 4px solid #51e3d4;
+	margin: 30px auto;
+	width: 80%;
+	min-height: 800px;
+	border-radius: 4px;
+}
+
+.post-content h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.post-content p {
+	font-size: 16px;
+	color: #555;
+	line-height: 1.6;
+}
+
+.reply-num {
+	width: 80%;
+	height: auto;
+	border-left: 7px solid #51e3d4;
+	display: flex;
+	align-items: center; /* 수직 중앙 정렬 */
+}
+
+.reply-num h2{
+	font-size: 35px;
+	margin-left: 20px;
+}
+
+.post-reply-box {
+	padding: 20px;
+	border: 1px solid #eeeeee;
+	margin: 10px auto;
+	width: 80%;
+	height: auto;
+}
+.post-maplist-box {
+	padding: 20px;
+	border: 1px solid #eeeeee;
+	margin: 10px auto;
+	width: 80%;
+	height: auto;
+}
+
+.post-reply-box2 {
+	padding: 20px;
+	width: 80%;
+	height: auto;
+}
+
+
+
+.content {
+	font-size: 17px;
+
+}
+
+.post-reply h5{
+	font-weight: bold;
+
+}
+
+.post-reply p, h5{
+	font-weight: bold;
+}
+
+.post-reply-button {
+	border: 1px solid #51e3d4;
+	background-color: white;
+	border-radius: 4px;
+
+}
+
+.aday {
+	color: #555555;
+}
+
+
+.post-reply-reply {
+	background-color: #dcf9f3;
+	border: none;
+	border-radius: 10px;
+	padding: 5px;
+	width: 40%;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.post-reply-reply p {
+	margin-left: 20px;
+}
+
+.post-reply-reply i{
+
+	color: #51e3d4;
+
+}
+
+.comment-form {
+	margin-top: 5px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+	.comment-form textarea {
+		width: 40%;
+		padding: 10px;
+		border: 2px solid #51e3d4;
+		border-radius: 8px;
+		position: relative;
+		height: 50px;
+		margin-top: 10px;
+	}
+
+	.comment-form button {
+		left: 41%;
+		padding: 12px 20px;
+		color: white;
+		background-color: #51e3d4;
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+		position: absolute;
+		top: 10px;
+	}
+
+	/* 대댓글 검색창*/
+
+.comment-form2 {
+	margin-top: 5px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-left: 20px;
+
+}
+.comment-form2 textarea {
+	width: 41%;
+	border: 1px solid #51e3d4;
+	border-radius: 8px;
+	position: relative;
+	height: 40px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.comment-form2 button {
+	left: 42%;
+	padding: 8px 10px;
+	color: white;
+	background-color: #51e3d4;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+}
+
+	.post-next-blog-title {
+		width: 80%;
+		margin: 20px auto;
+		height: 50px;
+		display: flex;
+		align-items: center; /* 수직 중앙 정렬 */
+		justify-content: flex-start; /* 수평 왼쪽 정렬 */
+		padding-left: 5px; /* 왼쪽으로 살짝 띄우기 */
+	}
+
+	.post-next-blog-box {
+		margin: 10px auto;
+		width: 80%;
+		height: 300px;
+		display: flex; /* Flexbox를 사용하여 수평으로 정렬 */
+		justify-content: space-between; /* 구역 사이의 공간을 동일하게 */
+		gap: 20px;
+	}
+
+	.post-next-blog {
+		flex: 1; /* 각 구역이 동일한 크기를 가지도록 */
+		margin-bottom: 20px;
+		border: 1px solid lightgrey; /* 각 구역의 테두리 */
+		padding: 10px; /* 구역 내부의 패딩 */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.post-next-blog img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover; /* 이미지를 부모 요소의 크기에 맞게 조정 */
+	}
+
+
+
+	.right-btn1 {
+		right: 0;
+		position: fixed;
+		bottom: 32px;
+		align-self: end;
+		margin-right: 20px;
+		background-color: white;
+		padding: 8px;
+		border: 0;
+		border-radius: 8px;
+		color: #51e3d4;
+		filter: drop-shadow(0px 4px 4px #d2dae5);
+		width: 70px;
+		height: 70px;
+		background-image: url("/images/up3.png");
+		background-size: 60% auto; /* 너비를 50%로, 높이는 자동으로 조정 */
+		background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+		background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
+	}
+
+	.right-btn2 {
+		right: 0;
+		position: fixed;
+		bottom: 112px;
+		align-self: end;
+		margin-right: 20px;
+		background-color: white;
+		padding: 8px;
+		border: 0;
+		border-radius: 8px;
+		filter: drop-shadow(0px 4px 4px #d2dae5);
+		width: 70px;
+		height: 70px;
+
+
+		background-image: url("/images/hjhj.png");
+		background-size: 65% auto; /* 너비를 50%로, 높이는 자동으로 조정 */
+		background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+		background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
+	}
+
+	.right-btn1:hover {
+		transform: scale(0.9, 0.9);
+		border-radius: 8px;
+	}
+
+	.right-btn2:hover {
+		transform: scale(0.9, 0.9);
+		border-radius: 8px;
+	}
+
+
+.ordered-nav {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.ordered-nav::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 6px;
+	top: 8px;
+	bottom: 16px;
+	width: 3px;
+	background-color: #27A4FC;
+}
+.ordered-nav--link {
+	padding-left: 1.5rem;
+	margin: 0.75rem 0;
+	position: relative;
+}
+.ordered-nav--link::before {
+	content: "";
+	position: absolute;
+	top: calc(50% - 6px);
+	left: 0;
+	width: 9px;
+	height: 9px;
+	background-color: white;
+	border-color: #27A4FC;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 50%;
+}
+.ordered-nav--link:first-child {
+	margin-top: 0;
+}
+.ordered-nav--link:first-child::before {
+	top: 2px;
+}
+.ordered-nav--link:last-child {
+	margin-bottom: 0;
+}
+.ordered-nav--link__active .tx-link {
+	color: white;
+}
+.ordered-nav--link__active::before {
+	background-color: #27A4FC;
+}
+
+.tx-link {
+	font-family: "Ubuntu", sans-serif;
+	color: #A5E2FD;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+.dot {overflow:hidden;float:left;width:12px;height:12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/mini_circle.png');}
+.dotOverlay {position:relative;bottom:10px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;font-size:12px;padding:5px;background:#fff;}
+.dotOverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+.number {font-weight:bold;color:#ee6152;}
+.dotOverlay:after {content:'';position:absolute;margin-left:-6px;left:50%;bottom:-8px;width:11px;height:8px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white_small.png')}
+.distanceInfo {position:relative;top:5px;left:5px;list-style:none;margin:0;}
+.distanceInfo .label {display:inline-block;width:50px;}
+.distanceInfo:after {content:none;}
+.overlay_info {border-radius: 6px; margin-bottom: 12px; float:left;position: relative; border: 1px solid #ccc; border-bottom: 2px solid #ddd;background-color:#fff;}
+.overlay_info:nth-of-type(n) {border:0; box-shadow: 0px 1px 2px #888;}
+.overlay_info a {display: block; background: #d95050; background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center; text-decoration: none; color: #fff; padding:12px 36px 12px 14px; font-size: 14px; border-radius: 6px 6px 0 0}
+.overlay_info a strong {background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/place_icon.png) no-repeat; padding-left: 27px;}
+.overlay_info .desc {padding:14px;position: relative; min-width: 190px; height: 56px}
+.overlay_info img {vertical-align: top;}
+.overlay_info .address {font-size: 12px; color: #333; position: absolute; left: 80px; right: 14px; top: 24px; white-space: normal}
+.overlay_info:after {content:'';position: absolute; margin-left: -11px; left: 50%; bottom: -12px; width: 22px; height: 12px; background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png) no-repeat 0 bottom;}
